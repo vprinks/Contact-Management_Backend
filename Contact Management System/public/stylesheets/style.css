@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: 10%;
+  background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  padding: 0 20px;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.leftc h1 {
+  padding: 100px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3vw;
+}
+
+.container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+
+.leftc {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(53, 52, 52);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.leftc h1 {
+  font-size: 5vw;
+  text-align: left;
+  padding-top: 20%;
+  color: whitesmoke;
+}
+
+.rightc {
+  width: 50%;
+  height: 100%;
+}
+
+.rightc img {
+  width: 63%;
+  height: 90%;
+  position: absolute;
+  right: 0.01%;
+  z-index: -9;
+}
+
+.rightc p {
+  font-size: 2.2vw;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-wrap: nowrap;
+  color: white;
+  text-align: center;
+  margin-top: 28%;
+  background-color: rgb(38, 41, 41);
+  width: 95%;
+}
+
+.register-container{
+  width: 30%;
+  height: 40%;
+  background-color: #0e273f;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: beige;
+}
+
+.register-container form{
+  width: 100%;
+  height: 100%;
+  padding: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.register-container input{
+  margin-bottom: 5%;
+}
+
+.register-container label{
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.register-container button{
+  width: 45%;
+  margin-left: 25%;
+  border-radius: 8px;
+  font-size: 1vw;
+  border: none;
+  margin-top: 5%;
+  font-weight: 500;
+}
+
+.all-contacts {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.all-contacts ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-header,
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-header {
+  font-weight: bold;
+  background-color: #f7f7f7;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-name {
+  flex: 1;
+  font-size: 18px;
+}
+
+.contact-number {
+  flex: 1;
+  color: #1b1a1a;
+}
+
+.contact-actions {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-action {
+  text-decoration: none;
+  color: #eeeff1;
+  margin-left: 10px;
+  background-color: rgb(7, 104, 125);  
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.contact-action:hover {
+  text-decoration: underline;
+}
+
+.update-form h1{
+font-size: 2vw;
+padding-bottom: 10px;
+}
+
+.update-form form{
+  width: 40%;
+  border: 1px solid black;
+  padding: 10px 50px;
+  background-color:#262c31;;
+}
+
+.update-form input{
+  padding: 8px 15px;
+}
+
+.update-form button{
+  padding: 8px 15px;
+  background-color: rgb(229, 159, 171);
+  color: #363535;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+}

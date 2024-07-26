@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="all-contacts">
+
+
+        <ul>
+            <li class="contact-header">
+                <span class="contact-name">Name</span>
+                <span class="contact-number">Number</span>
+                <span class="contact-actions">Actions</span>
+            </li>
+
+            
+            <% contacts.forEach(function(f){ %>
+                <li class="contact-item">
+                    <span class="contact-name">
+                        <%= f.name %>
+                    </span>
+                    <span class="contact-number">
+                        <%= f.number %>
+                    </span>
+                    <div class="contact-actions">
+                        <a class="contact-action" href="/update/<%= f._id %>">Update</a>
+                        <a class="contact-action" href="/delete/<%= f._id %>">Delete</a>
+                    </div>
+                </li>
+                <% }) %>
+        </ul>
+
+
+    </div>
+</body>
+
+</html>
